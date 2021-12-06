@@ -121,3 +121,10 @@ loser_daubs <- as_tibble(daubs2) %>%
 
 p2 <- sum(loser_board * !loser_daubs) * loser_final_num
 p2
+
+
+
+#how I could have done this in a more tidyverse way, taken from @drob:
+#use match() to find where in called_nums each bingo square is found
+#then find the max value for each bingo card to see when it won
+#gather() allows looking at vertical and horizonal at the same time
