@@ -18,14 +18,6 @@ p1
 #### PART TWO ####
 ##################
 
-make_steps_vec <- function(x) {
-    abs(vec - x)
-}
-
-calc_p2_fuel <- function(steps_vec) {
-    sapply(steps_vec, function(X) sum(1:x))
-}
-
 run_p2 <- function(x) {
     steps_vec <- abs(input - x)
     sum(sapply(steps_vec, function(x) sum(1:x)))
